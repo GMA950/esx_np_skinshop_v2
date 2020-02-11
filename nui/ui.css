@@ -1,0 +1,147 @@
+div { border: 0; outline: 0; vertical-align: baseline; background: transparent; margin: 0; padding: 0; }
+:focus { outline: 0; }
+::selection { background: transparent; }
+
+#menu {
+	color: rgb(255, 255, 255);
+	background: rgba(0, 0, 0, 0.6);
+	text-align: center;
+	font-family: Arial;
+	font-size: 1.5em;
+	padding: 5px;
+	position: fixed;
+	right: 1%;
+	top: 8%;
+	width: 25%;
+	height: 85%;
+	overflow: hidden;
+}
+
+#save {
+	font-size: 2.6em;
+	position: fixed;
+	right: 9.2%;
+	bottom: 13%;
+	white-space: nowrap;
+}
+
+#save button {
+	display: inline-block;
+	color: rgb(255, 255, 255);
+	background: rgba(0, 0, 0, 0.6);
+	padding: 5% 9% 5% 9%;
+	width: 180px;
+	height: 40px;
+	border-radius: 12%;
+	padding: 0px;
+	border: 2px solid #fff;
+}
+
+#save button:hover {
+	border: 2px solid rgb(131,174,0);
+}
+
+#rotate {
+	font-size: 0.6em;
+	position: fixed;
+	right: 20.3%;
+	bottom: 8%;
+	white-space: nowrap;
+}
+
+#rotate span {
+	background: rgba(0, 0, 0, 0.6);
+	padding: 5% 9% 5% 9%;
+	border-radius: 13%;
+	margin-right: 4%;
+}
+
+#color {
+	font-size: 0.6em;
+	position: fixed;
+	right: 11.3%;
+	bottom: 8%;
+	white-space: nowrap;
+}
+
+#color span {
+	background: rgba(0, 0, 0, 0.6);
+	padding: 5% 9% 5% 9%;
+	border-radius: 13%;
+	margin-right: 4%;
+}
+
+#escape {
+	font-size: 0.6em;
+	position: fixed;
+	right: 3.3%;
+	bottom: 8%;
+	white-space: nowrap;
+}
+
+#escape span {
+	background: rgba(0, 0, 0, 0.6);
+	padding: 5% 9% 5% 9%;
+	border-radius: 13%;
+	margin-right: 4%;
+}
+
+#selectors {
+	position: relative;
+}
+
+#selectors button {
+	background: rgba(0, 0, 0, 0.35);
+	border: 0px;
+	margin-top: 7px;
+	border: 1px solid #fff;
+	padding: 7px;
+}
+
+#selectors button:hover{
+	border: 1px solid rgb(131,174,0);
+}
+
+#selectors img {
+	width: 32px;
+	height: 32px;
+}
+
+.item {
+	height: 65%;
+	overflow-y: scroll;
+}
+
+.item button {
+	display: inline-block;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	border-radius: 12%;
+	padding: 0px;
+	border: 1px solid #fff;
+}
+
+.item button:hover {
+	border: 1px solid rgb(131,174,0);
+}
+
+.item img {
+    height: 80px;  
+    width: 80px;
+    border-radius: 12%;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 3px;
+}
