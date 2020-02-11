@@ -58,6 +58,6 @@ files {
 
 dependencies {
 	'es_extended',
-	'skincreator'
-	--'esx_skin'
+	--'skincreator'
+	'esx_skin',
 }
