@@ -6,7 +6,7 @@ Locales['fr'] = {
   ['press_menu'] = 'appuyez sur ~INPUT_CONTEXT~ pour accéder au menu',
   ['clothes'] = 'vêtements',
   ['you_paid'] = 'vous avez payé ~g~$%s~s~',
-  ['save_in_dressing'] = 'voulez-vous donner un nom à votre tenue?',
-  ['name_outfit'] = 'nom de la tenue?',
-  ['saved_outfit'] = 'the outfit has been saved!',
+  ['save_in_dressing'] = 'voulez-vous donner un nom à votre tenue ?',
+  ['name_outfit'] = 'nom de la tenue ?',
+  ['saved_outfit'] = 'la tenue a été sauvegardée !',
 }
