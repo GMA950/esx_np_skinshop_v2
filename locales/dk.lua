@@ -17,7 +17,7 @@ Locales['dk'] = {
   ['saved_outfits'] = 'Gemte outfits',
   ['change_clothe'] = "Tag outfit på",
   ['del_clothe'] = "Slet outfit",
-  ['choose_clothe'] = 'Hviklet outfit vil du bruge',
-  ['which_delete'] = 'Hviklet outfit vil du slette?',
+  ['choose_clothe'] = 'Hvilket outfit vil du bruge',
+  ['which_delete'] = 'Hvilket outfit vil du slette?',
   ['clothe_delete'] = 'Outfit slettet',
 }
