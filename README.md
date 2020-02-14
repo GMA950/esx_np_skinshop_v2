@@ -1,5 +1,8 @@
 ## ESX_NP_SKINSHOP
 
+# VERY IMPORTANT
+# DONT RENAME THE SCRIPT FOLDER UNLESS YOU KNOW WHAT YOU ARE DOING
+
 # ABOUT THIS VERSION
 
 This v2 version have all the images in a local way, no more links to external websites and now there is support for esx_accessories, just use my edit of that script
