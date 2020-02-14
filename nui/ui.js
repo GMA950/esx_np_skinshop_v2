@@ -44,7 +44,7 @@ $(function(){
         }
         else if (item.type == "ears"){
             window.typeOfShop = false;
-            $.post('http://esx_np_skinshop/zoom', JSON.stringify("cara"));
+            $.post('http://esx_np_skinshop_v2/zoom', JSON.stringify("cara"));
             $('#mascaras').hide();
             $('#mascara').hide();
             $('#corbata').hide();
@@ -70,7 +70,7 @@ $(function(){
         }
         else if (item.type == "mask"){
             window.typeOfShop = false;
-            $.post('http://esx_np_skinshop/zoom', JSON.stringify("cara"));
+            $.post('http://esx_np_skinshop_v2/zoom', JSON.stringify("cara"));
             $('#oreja').hide();
             $('#corbata').hide();
             $('#mochilas').hide();
@@ -87,7 +87,7 @@ $(function(){
         }
         else if (item.type == "helmet"){
             window.typeOfShop = false;
-            $.post('http://esx_np_skinshop/zoom', JSON.stringify("cara"));
+            $.post('http://esx_np_skinshop_v2/zoom', JSON.stringify("cara"));
             $('#mascaras').hide();
             $('#mascara').hide();
             $('#oreja').hide();
@@ -113,7 +113,7 @@ $(function(){
         }
         else if (item.type == "glasses"){
             window.typeOfShop = false;
-            $.post('http://esx_np_skinshop/zoom', JSON.stringify("cara"));
+            $.post('http://esx_np_skinshop_v2/zoom', JSON.stringify("cara"));
             $('#mascaras').hide();
             $('#mascara').hide();
             $('#oreja').hide();
@@ -147,28 +147,28 @@ $(function(){
     document.onkeydown = function(data){ // document.onkeyup
         if(data.which == 27){
             if (typeOfShop == true) {
-                $.post('http://esx_np_skinshop/exit', JSON.stringify("clothes"));
+                $.post('http://esx_np_skinshop_v2/exit', JSON.stringify("clothes"));
             }
             else{
-                $.post('http://esx_np_skinshop/exit', JSON.stringify("accessory"));
+                $.post('http://esx_np_skinshop_v2/exit', JSON.stringify("accessory"));
             }
             
         }
         if(data.which == 65 || (data.which == 65 && data.repeat)){ //a if
             //lastTime = Date.now();
-            $.post('http://esx_np_skinshop/rotate', JSON.stringify("left"));
+            $.post('http://esx_np_skinshop_v2/rotate', JSON.stringify("left"));
         }
         if(data.which == 68 || (data.which == 68 && data.repeat)) { //d if
             //lastTime = Date.now();
-            $.post('http://esx_np_skinshop/rotate', JSON.stringify("right"));
+            $.post('http://esx_np_skinshop_v2/rotate', JSON.stringify("right"));
         }
         if(data.which == 39) { // right
             //alert("Teste")
-            $.post('http://esx_np_skinshop/color', JSON.stringify("right"));
+            $.post('http://esx_np_skinshop_v2/color', JSON.stringify("right"));
         }
         if(data.which == 37) { // left
             //alert("Teste")
-            $.post('http://esx_np_skinshop/color', JSON.stringify("left"));
+            $.post('http://esx_np_skinshop_v2/color', JSON.stringify("left"));
         }
     }
 
@@ -198,19 +198,19 @@ function menu(){
         
         $(this).click(function(){       
             if (menu == "mascara" || menu == "chapeu" || menu == "oculos" || menu == "orelha"){
-                $.post('http://esx_np_skinshop/zoom', JSON.stringify("cara"));
+                $.post('http://esx_np_skinshop_v2/zoom', JSON.stringify("cara"));
             }
             else if (menu == "sapato"){
-                $.post('http://esx_np_skinshop/zoom', JSON.stringify("zapatos"));
+                $.post('http://esx_np_skinshop_v2/zoom', JSON.stringify("zapatos"));
             }
             else if (menu == "gravata" || menu == "blusa" || menu == "jaqueta" || menu == "colete"){
-                $.post('http://esx_np_skinshop/zoom', JSON.stringify("tops"));
+                $.post('http://esx_np_skinshop_v2/zoom', JSON.stringify("tops"));
             }
             else if (menu == "calca"){
-                $.post('http://esx_np_skinshop/zoom', JSON.stringify("pants"));
+                $.post('http://esx_np_skinshop_v2/zoom', JSON.stringify("pants"));
             }
             else{
-                $.post('http://esx_np_skinshop/zoom', JSON.stringify("ropa"));
+                $.post('http://esx_np_skinshop_v2/zoom', JSON.stringify("ropa"));
             }
             if (menu != "mascara" && menu != "mochila"){
                 if (typeof model !== 'undefined') { // POR EJEMPLO
@@ -235,10 +235,10 @@ function menu(){
         $(this).click(function(){
            // $.post('http://esx_np_skinshop/endDialog', typeOfShop);
             if (typeOfShop == true){
-                $.post('http://esx_np_skinshop/endDialog', JSON.stringify("clothes"));
+                $.post('http://esx_np_skinshop_v2/endDialog', JSON.stringify("clothes"));
             }      
             else{
-                $.post('http://esx_np_skinshop/endDialog', JSON.stringify("accessory"));
+                $.post('http://esx_np_skinshop_v2/endDialog', JSON.stringify("accessory"));
             }
         });
     });
@@ -291,7 +291,7 @@ function menu(){
 
 
             var tipo = $(this).data("action");
-            $.post("http://esx_np_skinshop/update", JSON.stringify([dados, tipo]));
+            $.post("http://esx_np_skinshop_v2/update", JSON.stringify([dados, tipo]));
         })
     })
 }
