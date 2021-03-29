@@ -232,14 +232,14 @@ function openDialog()
 		end
 
 		currentAction     = 'shop_menu'
-		--inMenu = false
+		
 		currentActionMsg  = _U('press_menu')
 		currentActionData = {}
 	end, function(data, menu)
 		menu.close()
 
 		currentAction     = 'shop_menu'
-		--inMenu = false
+		
 		currentActionMsg  = _U('press_menu')
 		currentActionData = {}
 	end)
@@ -267,7 +267,7 @@ AddEventHandler('esx_np_skinshop:hasExitedMarker', function(zone)
 	inMenu = false
 
 	if not hasPaid then
-		TriggerEvent('esx_skin:getLastSkin', function(skin)
+		ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin)
 			TriggerEvent('skinchanger:loadSkin', skin)
 		end)
 	end
