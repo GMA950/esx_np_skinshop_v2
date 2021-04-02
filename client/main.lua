@@ -232,14 +232,17 @@ function openDialog()
 		end
 
 		currentAction     = 'shop_menu'
-		
+		--inMenu = false
+			
 		currentActionMsg  = _U('press_menu')
 		currentActionData = {}
 	end, function(data, menu)
 		menu.close()
 
 		currentAction     = 'shop_menu'
-		
+						
+		--inMenu = false
+			
 		currentActionMsg  = _U('press_menu')
 		currentActionData = {}
 	end)
