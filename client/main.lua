@@ -267,8 +267,7 @@ AddEventHandler('esx_np_skinshop:hasExitedMarker', function(zone)
 	inMenu = false
 
 	if not hasPaid then
-		TriggerEvent('esx_skin:getLastSkin', function(skin)
-                        if skin ~= nil then
+		ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin)
 			TriggerEvent('skinchanger:loadSkin', skin)
                         end
 		end)
