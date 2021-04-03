@@ -19,6 +19,7 @@ AddEventHandler('esx_np_skinshop:saveOutfit', function(label, skin)
 		})
 
 		store.set('dressing', dressing)
+		store.save()
 	end)
 end)
 
