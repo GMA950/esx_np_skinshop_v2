@@ -44,7 +44,7 @@ $(function(){
         }
         else if (item.type == "ears"){
             window.typeOfShop = false;
-            $.post('http://esx_np_skinshop_v2/zoom', JSON.stringify("cara"));
+            $.post('https://esx_np_skinshop_v2/zoom', JSON.stringify("cara"));
             $('#mascaras').hide();
             $('#mascara').hide();
             $('#corbata').hide();
